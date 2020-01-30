@@ -93,7 +93,7 @@ public class LinkedList<E> implements List<E> {
     /**
      * Retorna el elemento del indice especificado
      * 
-     * @param int indece del elemento
+     * @param index del elemento
      * @return dato del nodo
      */
     public E get(int index) {

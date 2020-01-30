@@ -7,7 +7,7 @@ public class Estadistica {
     /**
      * Metodo que calcula la media de los datos ingresados
      * 
-     * @param datos
+     * @param datos son los datos a ingresar
      * @return double
      */
     public static double mean(List<Double> datos) {
@@ -22,7 +22,7 @@ public class Estadistica {
     /**
      * Metodo que calcula la desviacion estandar de los datos ingresados
      * 
-     * @param datos
+     * @param datos datos a ingresar
      * @return double
      */
     public static double stdDev(List<Double> datos) {
