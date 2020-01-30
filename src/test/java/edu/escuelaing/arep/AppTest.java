@@ -51,6 +51,7 @@ public class AppTest {
         String res = df.format(std);
         double r = 572.03;
         String res1 = df.format(r);
+
         assertEquals(res1, res);
     }
 }
