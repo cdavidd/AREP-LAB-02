@@ -43,7 +43,7 @@ Podremos copiar la URL y desde consola ejecutar el siguiente comando `git clone 
 
 **Ejecución**
 
-Para la ejecución del programa entraremos en la carpeta descargada o clonada _AREP-LAB-02/_, ya en esta ubicación desde consola ejecutaremos el siguiente comando `mvn package` en el cual sera para compilar y por ultimo ejecutaremos el siguiente comando `mvn exec:java`
+Para la ejecución del programa entraremos en la carpeta descargada o clonada _AREP-LAB-02/_, ya en esta ubicación desde consola ejecutaremos el siguiente comando `mvn package` en el cual sera para compilar y por ultimo ejecutaremos el siguiente comando `mvn exec:java` y abrimos la aplicacion en _localhost:4567/_
 
 ```
 [INFO] Scanning for projects...
@@ -57,6 +57,8 @@ SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ```
+
+Si estamos desde ubuntu podremos ejecutar el comando `heroku local web` y se abrira en _localhost:5000/_
 
 ## Ejecutando las pruebas
 
