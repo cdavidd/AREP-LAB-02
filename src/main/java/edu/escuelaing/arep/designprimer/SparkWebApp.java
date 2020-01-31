@@ -23,6 +23,11 @@ public class SparkWebApp {
         get("/results", (req, res) -> resultsPage(req, res));
     }
 
+    /**
+     * @param req tipo Request
+     * @param res tipo Response
+     * @return pageContent contenido html de la pagina
+     */
     public static String inputDataPage(Request req, Response res) {
         String pageContent = "<!DOCTYPE html>" + "<html>" + "<body>" + "<h1>Calcula la desviacion estandar y media</h1>"
                 + "<p>Ingresar los numeros separados por coma ',' Ej: 1,2,3</p>" + "<form action=\"/results\">"
@@ -31,6 +36,11 @@ public class SparkWebApp {
         return pageContent;
     }
 
+    /**
+     * @param req tipo Request
+     * @param res tipo Response
+     * @return pageContent contenido html de la pagina
+     */
     public static String resultsPage(Request req, Response res) {
         String datos = req.queryParams("datos");
         String[] datoS = datos.split(",");
@@ -48,14 +58,25 @@ public class SparkWebApp {
         return pagina;
     }
 
+    /**
+     * @param datos tipo LinkedList<Double>
+     * @return mean de los datos ingresados
+     */
     public static Double calcularMean(LinkedList<Double> datos) {
         return Estadistica.mean(datos);
     }
 
+    /**
+     * @param datos tipo LinkedList<Double>
+     * @return desviacion estandar de los datos ingresados
+     */
     public static Double calcularstdDev(LinkedList<Double> datos) {
         return Estadistica.stdDev(datos);
     }
 
+    /**
+     * @return port retorne al puerto a la cual la aplicacion sale
+     */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
