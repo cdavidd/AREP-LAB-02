@@ -1,0 +1,7 @@
+https://github.com/cdavidd/AREP-LAB-02
+https://sleepy-forest-75907.herokuapp.com/
+
+Integrantes:
+Cristian David López Arévalo
+
+rubrica de evaluacion dentro del git y adjunta.
